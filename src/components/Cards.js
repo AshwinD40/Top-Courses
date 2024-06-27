@@ -8,7 +8,7 @@ const Cards = (props) => {
     const [likedCourses , setLikedCourses] = useState([]);
    
     function getCourses() {
-        if(category == "All"){
+        if(category === "All"){
             let allCourses = [];
         Object.values(courses).forEach(array => {
             array.forEach(courseData => {
